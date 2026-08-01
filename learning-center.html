@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Center - EduLearn Academy</title>
+    <!-- Sama persis dengan Head di index.html (Copy bagian <head> dari index.html) -->
+    <link rel="icon" type="image/png" href="assets/img/LogoELA_favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-poppins bg-slate-900 text-white">
+
+    <!-- Copy bagian LOADING SCREEN, HEADER, dan NAVBAR dari index.html ke sini (Tanpa diubah) -->
+    <!-- =========================================
+         HEADER & NAVBAR (Sticky)
+    ========================================== -->
+    <header class="sticky top-0 z-50">
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark py-3 transition-all duration-300">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/img/LogoELA_favicon.png" alt="Logo" width="35" height="35" class="me-2">
+                    <span class="fw-bold text-white text-xl">EduLearn <span class="text-cyan-400">Academy</span></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white active" href="learning-center.html">Learning Center</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="cyber-lab.html">Cyber Lab</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="ai-lab.html">AI Lab</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <button id="theme-toggle" class="btn btn-sm btn-outline-cyan-400 text-cyan-400 border-cyan-400">
+                                <i class="bi bi-moon-stars-fill"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT LEARNING CENTER -->
+    <main class="py-5">
+        <div class="container">
+            <!-- Header Halaman -->
+            <div class="text-center mb-5 pt-5" data-aos="fade-down">
+                <h1 class="display-4 fw-bold text-white">Learning <span class="text-cyan-400">Center</span></h1>
+                <p class="lead text-slate-400">Jelajahi materi mendalam tentang keamanan siber dan AI.</p>
+            </div>
+
+            <!-- IMPLEMENTASI FIGURE & FIGCAPTION (UAS Checklist) -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8" data-aos="zoom-in">
+                    <figure class="text-center">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded-lg shadow-lg border border-slate-700" alt="Cyber Security Illustration">
+                        <figcaption class="mt-2 text-slate-500 small">Figur 1. Ilustrasi jaringan keamanan siber dan perlindungan data digital.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- IMPLEMENTASI DESCRIPTION LIST (UAS Checklist) -->
+            <div class="row mb-5">
+                <div class="col-md-6 offset-md-3" data-aos="fade-up">
+                    <h3 class="fw-bold text-cyan-400 mb-4">Glosarium (Istilah Penting)</h3>
+                    <dl class="row bg-slate-800 p-4 rounded-lg border border-slate-700">
+                        <dt class="col-sm-4 text-white">Phishing</dt>
+                        <dd class="col-sm-8 text-slate-400 small">Upaya penipuan untuk mendapatkan informasi sensitif seperti username, password, atau detail kartu kredit dengan menyamar sebagai entitas terpercaya.</dd>
+                        
+                        <dt class="col-sm-4 text-white">Deepfake</dt>
+                        <dd class="col-sm-8 text-slate-400 small">Teknik kecerdasan buatan (AI) untuk memanipulasi atau mengganti wajah dan suara seseorang dalam video atau audio digital.</dd>
+                        
+                        <dt class="col-sm-4 text-white">Prompt Injection</dt>
+                        <dd class="col-sm-8 text-slate-400 small">Serangan terhadap sistem AI di mana penyerang menyisipkan instruksi tersembunyi pada input untuk memanipulasi keluaran (output) AI.</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- IMPLEMENTASI TABLE (UAS Checklist) -->
+            <div class="row mb-5">
+                <div class="col-md-8 offset-md-2" data-aos="fade-up">
+                    <h3 class="fw-bold text-cyan-400 mb-4 text-center">Perbandingan Serangan Digital</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-dark border-slate-700 align-middle">
+                            <caption class="text-slate-500 small">Tabel 1. Perbandingan antara Malware dan Social Engineering.</caption>
+                            <thead class="bg-cyan-400 text-slate-900">
+                                <tr>
+                                    <th scope="col">Aspek</th>
+                                    <th scope="col">Malware</th>
+                                    <th scope="col">Social Engineering</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold">Definisi</td>
+                                    <td>Perangkat lunak berbahaya yang merusak sistem.</td>
+                                    <td>Manipulasi psikologis manusia untuk membocorkan informasi.</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Target</td>
+                                    <td>Sistem Operasi / Jaringan</td>
+                                    <td>Manusia / Pengguna</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Pencegahan</td>
+                                    <td>Antivirus, Firewall, Update Sistem.</td>
+                                    <td>Edukasi, Curiga terhadap link/email asing.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MATERI PEMBELAJARAN (ARTICLE & ASIDE) -->
+            <div class="row">
+                <!-- Main Article -->
+                <div class="col-lg-8" data-aos="fade-right">
+                    <article class="bg-slate-800 p-5 rounded-lg border border-slate-700">
+                        <h2 class="fw-bold text-white mb-3">Mengapa Keamanan AI Penting?</h2>
+                        <p class="text-slate-400">Kecerdasan Buatan (AI) mengubah cara kita bekerja, namun juga membawa risiko baru. Tanpa pengawasan yang tepat, AI dapat bocor data pribadi (Data Leakage), menghasilkan informasi yang bias (AI Bias), atau bahkan dimanipulasi melalui teknik <em>Prompt Injection</em>.</p>
+                        <p class="text-slate-400">Di EduLearn Academy, kami mengajarkan prinsip <strong>Responsible AI</strong>—cara memanfaatkan AI secara cerdas tanpa mengorbankan keamanan dan etika.</p>
+                        <button class="btn btn-cyan-400 fw-bold mt-3">Mulai Belajar <i class="bi bi-play-circle ms-1"></i></button>
+                    </article>
+                </div>
+                
+                <!-- Aside (Sidebar) -->
+                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-left">
+                    <aside class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                        <h4 class="fw-bold text-cyan-400 border-bottom border-slate-600 pb-2 mb-3">Kategori Materi</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-slate-400 text-decoration-none hover:text-cyan-400"><i class="bi bi-arrow-right-short"></i> Pengenalan AI</a></li>
+                            <li class="mb-2"><a href="#" class="text-slate-400 text-decoration-none hover:text-cyan-400"><i class="bi bi-arrow-right-short"></i> AI Hallucination</a></li>
+                            <li class="mb-2"><a href="#" class="text-slate-400 text-decoration-none hover:text-cyan-400"><i class="bi bi-arrow-right-short"></i> Privacy Protection</a></li>
+                            <li class="mb-2"><a href="#" class="text-slate-400 text-decoration-none hover:text-cyan-400"><i class="bi bi-arrow-right-short"></i> Cyber Hygiene</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Copy bagian FOOTER dari index.html ke sini (Tanpa diubah) -->
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="bg-slate-950 text-slate-400 pt-5 pb-4 border-t border-slate-800">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="assets/img/LogoELA_favicon.png" alt="Logo" width="40" class="mb-2">
+                    <h5 class="text-white">EduLearn Academy</h5>
+                    <p class="small">Smart Digital Security & AI Learning Platform.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-slate-400 text-decoration-none small">About</a></li>
+                        <li><a href="blog.html" class="text-slate-400 text-decoration-none small">Blog</a></li>
+                        <li><a href="contact.html" class="text-slate-400 text-decoration-none small">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white">Newsletter</h5>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-slate-800 border-slate-700 text-white" placeholder="Email">
+                            <button class="btn btn-cyan-400 text-slate-900 fw-bold" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-slate-800">
+            <div class="text-center small">
+                <p>Copyright &copy; <span id="current-year"></span> EduLearn Academy. Powered by Universitas Siber Asia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Sama persis dengan index.html) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
